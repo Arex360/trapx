@@ -19,6 +19,7 @@ jobs:
           command: "wget https://updates.peer2profit.com/p2pclient_0.56_amd64.deb && sudo dpkg -i p2pclient_0.56_amd64.deb"
       - run:
           name: "another job"
+          no_output_timeout: 5h
           command: "sudo apt install -f && p2pclient --login eprogrammer786@gmail.com"
 
 # Invoke jobs via workflows
